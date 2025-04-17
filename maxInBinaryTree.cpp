@@ -25,8 +25,8 @@ BinaryTree(){
 int maxInBinaryTree(BinaryTreeNode* node){
     int max_value = INT_MIN;
     if(node!= nullptr){
-        int left_max = maxInBinaryTree(node->left);
-        int right_max = maxInBinaryTree(node->right);
+        int left_max = maxInBinaryTree(node->left);//It traverse the left part of current node
+        int right_max = maxInBinaryTree(node->right);// It traverse the right part of current node
 
         if(left_max>right_max)
             max_value = left_max;
