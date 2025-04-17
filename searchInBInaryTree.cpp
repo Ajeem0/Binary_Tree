@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+//Create A class for creating binary tree node
 class BinaryTreeNode{
 public:
 int data;
@@ -11,12 +11,13 @@ BinaryTreeNode(int val){
     left = nullptr;
     right = nullptr;
 }
+
 static bool findInBT(BinaryTreeNode* root,int data){
     if(root == nullptr)
        return false;
     if(root->data == data)
         return true;
-    return findInBT(root->left,data) || findInBT(root->right,data);
+    return findInBT(root->left,data) || findInBT(root->right,data);//Here we traverse the Binary tree
     
 }
 
