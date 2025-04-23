@@ -82,4 +82,8 @@ int main(){
     return 0;
 }
 
+//output is: 
+// Diameter (Approach 1): 4
+// Diameter (Approach 2): 4
+
 
