@@ -42,6 +42,7 @@ private:
         }
 };
 
+//Print the inorder of the constructed tree
 void printInorder(BinaryTreeNode* root){
     if(!root) return;
     printInorder(root->left);
